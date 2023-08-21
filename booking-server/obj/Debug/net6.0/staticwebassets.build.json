@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZxURFqU3YvAEzQAHjqdt0ZOdquti1ZSz9Sb4pVTNM10=",
+  "Source": "booking-server",
+  "BasePath": "_content/booking-server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
