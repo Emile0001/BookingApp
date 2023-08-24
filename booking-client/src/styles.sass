@@ -1,0 +1,48 @@
+// breakpoints  
+$lg: 992px
+$md: 768px
+$sm: 576px
+
+// font-size
+$f1: 40px
+$f2: 30px
+$f3: 15px
+
+// dark-mode
+$dark-green: #040D12
+$dark-light-green : #183D3D
+$light-green: #93B1A6
+
+// init border radius of all components
+$border-radius: 2px
+
+
+// default font style
+$default-font-family: Verdana, sans-serif
+
+
+// default font setup
+body
+    font-family: $default-font-family
+    font-size: $f3
+
+
+// large breakpoint for screen
+@mixin media-screen-large-breakpoint($breakpoint)
+    @media only screen and (min-width: $lg * 1px)
+        @content
+
+// medium breakpoint for screen
+@mixin media-screen-medium-breakpoint($breakpoint)
+    @media only screen and (min-width: $md * 1px)
+        @content
+
+// small breakpoint for screen
+@mixin media-screen-large-breakpoint($breakpoint)
+    @media only screen and (min-width: $sm * 1px)
+        @content
+
+
+
+a, button 
+    all: unset
