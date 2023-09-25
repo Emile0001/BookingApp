@@ -30,7 +30,7 @@
     <table class="border border-slate-500 table-fixed w-full">
         <thead class="w-full">
             <tr>
-                <th class="sticky bg-gray-100 z-50 left-0 border w-32 border-slate-500"></th>
+                <th class="sticky bg-gray-100 z-50 left-0 border w-36 border-slate-500"></th>
                 <th class="border w-32 border-slate-500"
                     *ngFor="let day of fullDaysInMonth"
                     [innerHTML]="day | formatDate | replace: '\n':'\<br\>'">
@@ -41,7 +41,7 @@
             <tr class="relative h-28">
                 <td class="sticky bg-gray-100 z-50 left-0 border border-slate-500 text-center">Room 1</td>
                 <td class="border border-slate-500" *ngFor="let day of fullDaysInMonth"></td>
-                <td class="absolute bg-lime-300 h-8 top-2/4 -translate-y-2/4 left-2/4 w-1/4"></td>
+                <td class="absolute bg-lime-300 h-8 top-2/4 -translate-y-2/4" *ngFor="let booking of bookingInfo" [ngStyle]="{left: getStartPoint(booking) + 'rem', width: getWidth(booking, getStartPoint(booking))+'rem'}"></td>
             </tr>
         </tbody>
     </table>
